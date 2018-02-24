@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spam</title>
+</head>
+<body>
+    <script>
+function checkSpam(str) {
+var lowerStr = str.toLowerCase();
+return !!(~lowerStr.indexOf('viagra') || ~lowerStr.indexOf('xxx') || ~lowerStr.indexOf('numb'));
+}
+var res = prompt("");
+alert(checkSpam(res));
+    </script>
+</body>
+</html>

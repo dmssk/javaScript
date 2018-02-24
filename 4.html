@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decimal</title>
+</head>
+<body>
+    <script>
+        function getDecimal(num){
+            return (num - Math.floor(num)).toFixed(1);
+        }
+        var a = prompt();
+        alert(getDecimal(a));
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2</title>
+</head>
+<body>
+    <p>Ціна першого товару: <input type="text" id="num1"> Кількість товару:<input type="text" id="count1"></p>
+    <p>Ціна другого товару: <input type="text" id="num2"> Кількість товару: <input type="text" id="count2"></p>
+    <hr>
+  
+    <p id="res"></p>
+    <input type="submit" id="res" value="ПОРАХУВАТИ" onclick="Prise()">
+    
+    <script>
+        function Prise(){
+            var prise1 = document.getElementById("num1").value;
+            prise1 = parseFloat(prise1);
+        
+            var prise2 = document.getElementById("num2").value;
+            prise2 = parseFloat(prise2);
+        
+            var count1 = document.getElementById("count1").value;
+            count = parseInt(count1);
+            
+            var count2 = document.getElementById("count2").value;
+            count = parseInt(count2);
+            
+            var res = (prise1*count1)+(prise2*count2);
+            res = parseFloat(res.toFixed(3));
+        
+            document.getElementById("res").innerHTML = res+"$";
+        }
+    </script>
+</body>
+</html>
